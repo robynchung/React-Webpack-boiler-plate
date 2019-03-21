@@ -1,4 +1,6 @@
-# React Boiler Plate 
+# React Webpack Node.js Boiler Plate
 
  - React
  - Webpack
+ - Eslint
+ - Prettier
