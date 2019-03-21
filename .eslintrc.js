@@ -4,7 +4,8 @@ module.exports = {
   plugins: ['import', 'react', 'jest', 'prettier'],
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -28,6 +29,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error'
+    'react/jsx-uses-vars': 'error',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
   }
 };
