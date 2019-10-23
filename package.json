@@ -33,10 +33,10 @@
     "prettier-eslint": "^8.8.2",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }

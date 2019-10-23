@@ -31,5 +31,12 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx']
+      }
+    }
   }
 };
