@@ -5,3 +5,11 @@
 - Webpack
 - Eslint
 - Prettier
+
+## To start,
+
+- go to root folder
+
+`npm i`
+
+`npm run start:dev`
