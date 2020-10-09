@@ -5,6 +5,7 @@
 - Webpack
 - Eslint
 - Prettier
+- SCSS
 
 ## To start,
 
