@@ -6,6 +6,7 @@
 - Eslint
 - Prettier
 - SCSS
+- PWA offline initial setting
 
 ## To start,
 
