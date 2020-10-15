@@ -9,7 +9,7 @@
 
 ## To start,
 
-- go to root folder
+- go to root client folder
 
 `npm i`
 
