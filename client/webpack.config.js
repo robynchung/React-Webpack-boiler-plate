@@ -1,6 +1,8 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src'),
@@ -39,6 +41,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: path.join(__dirname, 'public/manifest.json') }]
+    }),
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
