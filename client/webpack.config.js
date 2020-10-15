@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src'),
@@ -40,7 +41,12 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      title: 'Progressive Web Application'
+    }),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
     })
   ],
   resolve: {
